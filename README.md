@@ -13,7 +13,7 @@ Currently, two official plugins are available:
 # To run this app
 - => NodeJS version 20+ must be installed on your computer
   
-- Clone the repository, run: "git clone https://github.com/Sergyoubi/Dashboard" 
+- Clone the repository, run: "git clone https://github.com/Sergyoubi/Dashboard.git" 
 - cd to "Dashboard"
 - Then run: "npm install"
 - Finally, start app: "npm run dev"
