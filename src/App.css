@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.navlinks {
+  @apply w-[95%] py-5 flex justify-start items-center text-neutral-800 font-medium text-sm gap-3 hover:bg-lime-200 cursor-pointer rounded-lg;
+}
+
+.input-class {
+  @apply w-[70%] h-[60%] pl-4 text-slate-800 font-light text-sm outline-none border border-slate-300 rounded-2xl relative left-[10%];
+}
+
+.button-todo {
+  @apply flex gap-2 py-2 px-6 bg-neutral-800 hover:bg-slate-800 text-white text-lg font-extralight rounded-lg;
+}
+
+.button-cmt {
+  @apply flex gap-2 py-2 px-6 bg-stone-600 hover:bg-slate-800 text-white text-lg font-extralight rounded-lg;
+}
