@@ -1,5 +1,7 @@
 import { GoPencil } from "react-icons/go";
 import { GoTrash } from "react-icons/go";
+import { MdOutlineDoneOutline } from "react-icons/md";
+
 const TodoList = ({ userId, title, completed }) => {
   return (
     <section className="w-[99%] py-3 flex justify-center items-center gap-2 hover:bg-stone-100 rounded-xl">
@@ -12,9 +14,10 @@ const TodoList = ({ userId, title, completed }) => {
           {completed ? "Completed" : "Not completed"}
         </p>
       </div>
-      <div className="w-[20%] flex justify-end items-center gap-7">
-        <GoPencil size={24} className="text-slate-800" />
-        <GoTrash size={24} className="text-slate-800 " />
+      <div className="w-[20%] flex justify-end items-center gap-5">
+        <GoPencil size={22} className="text-slate-800" />
+        <GoTrash size={22} className="text-slate-800 " />
+        <MdOutlineDoneOutline size={22} className="text-slate-800 " />
       </div>
     </section>
   );

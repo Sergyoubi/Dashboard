@@ -1,24 +1,24 @@
-import { IoMdHome } from "react-icons/io";
-import { FaUser } from "react-icons/fa";
-import { IoMdPhotos } from "react-icons/io";
-import { IoSettingsSharp } from "react-icons/io5";
+import { RiHome2Line } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlineInsertPhoto } from "react-icons/md";
+import { GoGear } from "react-icons/go";
 
 const NavLinks = () => {
   return (
-    <div className="w-full h-[90%] flex-center">
-      <ul className="w-full h-full flex flex-col justify-start items-center relative">
+    <div className="w-full h-[90%] flex-center border-r border-neutral-100">
+      <ul className="w-full h-full flex flex-col justify-start items-center">
         <li className="navlinks">
-          <IoMdHome size={20} className="text-neutral-600 ml-4" /> Dashboard
+          <RiHome2Line size={20} className="text-neutral-600 ml-4" /> Dashboard
         </li>
         <li className="navlinks">
-          <FaUser size={19} className="text-neutral-600 ml-4" /> Users
+          <FaRegUser size={19} className="text-neutral-600 ml-4" /> Users
         </li>
         <li className="navlinks">
-          <IoMdPhotos size={20} className="text-neutral-600 ml-4" /> Photos
+          <MdOutlineInsertPhoto size={20} className="text-neutral-600 ml-4" />{" "}
+          Photos
         </li>
         <li className="navlinks">
-          <IoSettingsSharp size={20} className="text-neutral-600 ml-4" />{" "}
-          Configurations
+          <GoGear size={20} className="text-neutral-600 ml-4" /> Configurations
         </li>
       </ul>
     </div>

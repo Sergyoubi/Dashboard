@@ -21,9 +21,9 @@
 }
 
 .button-todo {
-  @apply flex gap-2 py-2 px-6 bg-neutral-800 hover:bg-slate-800 text-white text-lg font-extralight rounded-lg;
+  @apply flex gap-2 py-2 px-4 bg-neutral-800 hover:bg-slate-800 text-white text-sm font-extralight rounded-lg;
 }
 
 .button-cmt {
-  @apply flex gap-2 py-2 px-6 bg-stone-600 hover:bg-slate-800 text-white text-lg font-extralight rounded-lg;
+  @apply flex gap-2 py-2 px-4 bg-stone-600 hover:bg-slate-800 text-white text-sm font-extralight rounded-lg;
 }

@@ -76,14 +76,15 @@ const MainContainer = () => {
       <div className="w-full h-[88%] flex flex-col justify-center items-center">
         <div className="w-[80%] h-[15%] my-1 flex justify-start items-center gap-6">
           <button className="button-todo" onClick={handleOpenTodo}>
-            <FaTasks size={18} className="relative top-1" />
+            <FaTasks size={18} />
             List of Todos
           </button>
           <button className="button-cmt" onClick={handleOpenComments}>
-            <CiViewList size={25} className="relative" />
+            <CiViewList size={19} />
             List of Comments
           </button>
         </div>
+        <p>List of users</p>
         <Users users={users} isPending={isPending} />
         <Modal open={openTodo} onClose={handleCloseTodo}>
           <Box sx={style}>
