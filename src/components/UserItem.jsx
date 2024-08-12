@@ -1,7 +1,7 @@
 import { GoPencil } from "react-icons/go";
 import { GoTrash } from "react-icons/go";
 
-const UserList = ({ name, email, address }) => {
+const UserItem = ({ name, email, address }) => {
   return (
     <section className="w-[99%] py-3 flex justify-center items-center gap-2 hover:bg-stone-100 rounded-xl">
       <div className="w-[80%] flex justify-between gap-4">
@@ -21,4 +21,4 @@ const UserList = ({ name, email, address }) => {
   );
 };
 
-export default UserList;
+export default UserItem;

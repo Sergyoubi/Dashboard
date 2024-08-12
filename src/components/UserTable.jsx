@@ -1,9 +1,9 @@
 import Loader from "./Loader";
-import UserList from "./UserList";
+import UserItem from "./UserItem";
 
-const Users = ({ users, isPending }) => {
+const UserTable = ({ isPending, users }) => {
   return (
-    <div className="w-[80%] h-[85%] bg-white my-2 border border-slate-200 rounded-lg flex flex-col justify-start items-center overflow-scroll">
+    <div className="w-[90%] h-[90%] bg-white relative left-[4%] border border-slate-200 rounded-lg flex flex-col justify-start items-center overflow-scroll">
       <header className="w-full bg-white py-3 flex justify-between gap-4 rounded-lg">
         <p className="relative left-[3%]">Name</p>
         <p className="relative left-[5%]">Email</p>
@@ -15,7 +15,7 @@ const Users = ({ users, isPending }) => {
       ) : (
         <div className="w-full h-full flex flex-col justify-start items-center overflow-scroll">
           {users?.map((user) => (
-            <UserList key={user.id} {...user} />
+            <UserItem key={user.id} {...user} />
           ))}
         </div>
       )}
@@ -23,4 +23,4 @@ const Users = ({ users, isPending }) => {
   );
 };
 
-export default Users;
+export default UserTable;
